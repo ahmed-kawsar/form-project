@@ -1,3 +1,5 @@
+import PropTypes from 'prop-types'
+
 const ImageForm = ({ page, setPage, formData, setFormData }) => {
   return (
     <div>
@@ -35,3 +37,10 @@ const ImageForm = ({ page, setPage, formData, setFormData }) => {
   )
 }
 export default ImageForm
+
+ImageForm.propTypes = {
+  page: PropTypes.number.isRequired,
+  setPage: PropTypes.func.isRequired,
+  formData: PropTypes.object.isRequired,
+  setFormData: PropTypes.func.isRequired,
+}

@@ -1,3 +1,4 @@
+import PropTypes from 'prop-types'
 import IconBar from './IconBar'
 import ProgressBar from './ProgressBar'
 
@@ -12,3 +13,7 @@ const Header = ({ page }) => {
   )
 }
 export default Header
+
+Header.propTypes = {
+  page: PropTypes.number.isRequired,
+}

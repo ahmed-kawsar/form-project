@@ -1,3 +1,5 @@
+import PropTypes from 'prop-types'
+
 const PersonForm = ({ page, setPage, formData, setFormData }) => {
   return (
     <div>
@@ -65,3 +67,10 @@ const PersonForm = ({ page, setPage, formData, setFormData }) => {
   )
 }
 export default PersonForm
+
+PersonForm.propTypes = {
+  page: PropTypes.number.isRequired,
+  setPage: PropTypes.func.isRequired,
+  formData: PropTypes.object.isRequired,
+  setFormData: PropTypes.func.isRequired,
+}
