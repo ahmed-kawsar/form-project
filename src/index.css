@@ -1,0 +1,152 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  justify-content: center;
+  padding: 0.5em;
+}
+
+.App {
+  width: 550px;
+  max-width: 95%;
+  margin: 0 auto;
+  margin-top: 2em;
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+}
+
+header .title,
+.tagline {
+  text-align: center;
+  margin: 0.5em;
+}
+
+header .title {
+  font-size: 1.5em;
+  font-weight: 500;
+}
+
+.progress-bar {
+  margin: 0 auto;
+  width: 500px;
+  height: 15px;
+  background-color: rgb(167, 82, 82);
+  margin-top: 1em;
+}
+.progress-bar div {
+  width: 25%;
+  height: 100%;
+  background-color: #fcbc51;
+  background-image: linear-gradient(
+    45deg,
+    rgb(252, 163, 17) 25%,
+    transparent 25%,
+    transparent 50%,
+    rgb(252, 163, 17) 50%,
+    rgb(252, 163, 17) 75%,
+    transparent 75%,
+    transparent
+  );
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 0.8em;
+}
+
+.form input {
+  height: 2.5rem;
+  padding-left: 0.5em;
+  border-radius: 10px;
+  border: 1px solid black;
+  background-color: none;
+}
+
+.form input:focus {
+  outline: none;
+}
+
+.form label {
+  margin-bottom: -5px;
+  margin-left: 5px;
+  font-size: 0.9rem;
+  font-weight: 600;
+}
+
+.form button {
+  height: 2.5rem;
+  border-radius: 10px;
+  border: none;
+  font-weight: 600;
+}
+
+.form button:hover {
+  background-color: #04aa6d;
+  color: white;
+}
+
+.file {
+  padding-top: 7px;
+}
+
+.success-form {
+  margin-top: 2em;
+  text-align: center;
+}
+
+.success-form p,
+header .tagline {
+  font-weight: 100;
+  font-size: 0.8rem;
+}
+
+.active-bar,
+.disabled-bar {
+  height: 2px;
+  width: 12.5%;
+  background-color: #04aa6d;
+}
+
+.disabled-bar {
+  opacity: 30%;
+}
+
+.active-icon,
+.disabled-icon {
+  background-color: #04aa6d;
+  color: white;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  padding: 0.5em;
+}
+
+.disabled-icon {
+  opacity: 30%;
+}
+
+.bar-icon-container {
+  margin-top: 1.5em;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.caption-container {
+  display: flex;
+  justify-content: center;
+  justify-content: space-around;
+  margin-left: 5em;
+  margin-right: 5em;
+  margin-top: 10px;
+}
+
+.caption-container .disabled-caption {
+  opacity: 30%;
+}
