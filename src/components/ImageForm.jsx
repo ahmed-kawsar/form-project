@@ -17,7 +17,7 @@ const ImageForm = ({ page, setPage, formData, setFormData }) => {
           id='signature'
           type='file'
           className='file'
-          value={formData.photo}
+          value={formData.signature}
           onChange={(e) =>
             setFormData({ ...formData, signature: e.target.value })
           }
