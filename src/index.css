@@ -54,6 +54,20 @@ header .title {
   );
 }
 
+.meta {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 1em;
+  padding-left: 1em;
+  padding-right: 1em;
+}
+
+.meta h2 {
+  font-size: 1.3em;
+  font-weight: 500;
+}
+
 .form {
   display: flex;
   flex-direction: column;
