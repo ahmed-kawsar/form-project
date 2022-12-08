@@ -34,6 +34,7 @@ header .title {
 .progress-bar {
   margin: 0 auto;
   width: 500px;
+  max-width: 95%;
   height: 15px;
   background-color: rgb(167, 82, 82);
   margin-top: 1em;
@@ -73,6 +74,7 @@ header .title {
   display: flex;
   flex-direction: column;
   gap: 0.8em;
+  transition: 0.3s ease;
 }
 
 .form input {
